@@ -1,0 +1,129 @@
+@import url('http://fonts.cdnfonts.com/css/tangsel');
+body{
+    margin:0;
+    background-color: #F2EDD7FF;
+}
+/* navbar */
+nav{
+    background-color:#2A2B2DFF;
+    width:100%;
+}
+nav ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+.containment{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    gap:20px;
+}
+nav ul li a{
+    display:block;
+    color:#2DA8D8FF;
+    font-size: 1.5em;
+    font-family: monospace;
+    text-decoration:none;
+    line-height: 2em;
+    border:5px solid #2A2B2DFF;
+    transition-property: font-size  ,border-bottom;
+    transition-duration: 350ms;
+    transition-timing-function: ease;
+}
+
+nav ul li a:hover{
+    color:#2DA8D8FF;
+    border-bottom:5px solid #2DA8D8FF;
+    font-size:2em;
+}
+
+
+/*Logo and Tag Line*/
+.L_T{
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-top:30px;
+    font-family: 'Tangsel', sans-serif;
+}
+.Logo{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+
+/*Logo flip box*/
+.Logo .flip_box{
+    display:flex;
+    justify-content: center;
+    width:20%;
+}
+.Logo .box{
+    display:grid;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+    text-align: center;
+}
+.Logo .flip_box:hover .box {
+    transform: rotateY(180deg);
+}
+.personal_img{
+    overflow: hidden;
+    width:80%;
+    border-radius:100%;
+    margin: 100px 0;
+}
+.front ,.back{
+    grid-column: 1;
+    grid-row: 1;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.Logo .back {
+    transform: rotateY(180deg);
+}
+
+
+/*Tag Line*/
+.L_T .Logo title{
+    display:block;
+    font-size:6vw;
+    margin-top:30px;
+}
+.L_T .Tag_Line h2{
+    text-align: center;
+
+}
+.L_T .Tag_Line h2:nth-child(2){
+    margin-bottom:100px;
+}
+
+/*About me*/
+.About_me{
+    display:flex;
+    width:100%;
+    margin-top :100px;
+    flex-direction: column;
+    align-items: center;
+}
+.About_me title{
+    display:block;
+    font-size:5em;
+    font-family:'Courier New', Courier, monospace;
+    margin-bottom:30px;
+}
+.About_me .about_me_box{
+    width:20%;
+}
+.About_me p{
+    font-size:1em;
+    font-family: cursive;
+    margin:25px 0;
+}
