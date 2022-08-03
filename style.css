@@ -1,7 +1,7 @@
 @import url('http://fonts.cdnfonts.com/css/tangsel');
 body{
     margin:0;
-    background-color: #F2EDD7FF;
+    background:linear-gradient(45deg,#F2EDD7FF, white)
 }
 /* navbar */
 nav{
@@ -106,24 +106,86 @@ nav ul li a:hover{
 }
 
 /*About me*/
-.About_me{
+.About_me, .Can_Do, .Contact_Me {
     display:flex;
     width:100%;
     margin-top :100px;
     flex-direction: column;
     align-items: center;
 }
-.About_me title{
+.title{
     display:block;
     font-size:5em;
     font-family:'Courier New', Courier, monospace;
     margin-bottom:30px;
 }
-.About_me .about_me_box{
-    width:20%;
+.about_me_box, .can_do_box{
+    width:30%;
 }
-.About_me p{
-    font-size:1em;
+p{
+    font-size:1.5em;
     font-family: cursive;
     margin:25px 0;
+}
+.btn_container{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.about_me_box .resume_button{
+    color:black;
+    font-family:'Courier New', Courier, monospace;
+    width:30%;
+    display:flex;
+    justify-content: center;
+    text-decoration: none;
+    border:1px solid black;
+    padding:10px;
+    font-size:1.2em;
+    transition-property: color, box-shadow;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+}
+.about_me_box .resume_button:hover{
+    box-shadow: inset 200px 0 0 0 black;
+    color: white;
+}
+
+/*contact box*/
+.Contact_Me{
+    height: 50vh;
+    justify-content: flex-end;
+}
+.contact_box{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#2E3445;
+    padding:2em 0;
+}
+.contact_box a{
+    text-decoration:none;
+    color:#73CCA8;
+}
+.contact_box ul{
+    text-align: center;
+    padding:0;
+}
+.contact_box li{
+    display:inline-block;
+    width:5%;
+}
+.social_img{
+    margin-top:20px;
+    width:100%;
+    background-color:white;
+    border-radius: 100%;
+}
+.social_img:hover{
+    background-color:#73CCA8;
+}
+small{
+    margin-top:10px;
+    color:lightgray;
 }
