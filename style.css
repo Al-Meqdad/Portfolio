@@ -3,7 +3,9 @@ body{
     margin:0;
     background:linear-gradient(45deg,#F2EDD7FF, white)
 }
-
+html {
+    scroll-behavior: smooth;
+}
 /* navbar */
 nav{
     background-color:#2A2B2DFF;
